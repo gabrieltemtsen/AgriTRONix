@@ -1,0 +1,25 @@
+.bl-name{
+    font-size: 30px;
+    color: gold;
+    text-align: center;
+}
+.bl-thank{
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+.bl-par{
+    margin-left: 60px;
+    margin-right: 30px;
+    font-size: 30px;
+}
+.bl-than{
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 40px;
+}
+.bl-img{
+    width: 50%;
+    margin-left: 350px;
+    
+}
