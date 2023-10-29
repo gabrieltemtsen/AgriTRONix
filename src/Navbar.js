@@ -27,10 +27,10 @@ const Navbar = () => {
             Connect Your Wallet
           </NavLink>
           <NavLink to='/annual'>
-            About project
+             About project
           </NavLink>
     <NavLink to='/blogs'>
-            About Spheron
+            About XDC Network
           </NavLink>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}

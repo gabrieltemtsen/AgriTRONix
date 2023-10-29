@@ -14,16 +14,16 @@ const About = () => {
     }
   return (
     <div>
-      <h1 className='ab-tex'>Connect your metamask wallet</h1>
-      <h2 className='ad-text'>Steps to connect metamask:</h2>
+      <h1 className='ab-text'>Connect your metamask wallet</h1>
+      <h2 className='ad-text'>Steps to connect metamask</h2>
       <p className='p-text'>1.Install The Extension from chrome</p>
       <p className='p-text'>2.Setting Up Your MetaMask Wallet</p>
       <p className='p-text'>3.Take note of the secret recovery phrase  </p>
-      <p className='p-text'>4.Keep both secret recovery phrase and  password of metamask private</p>
-     <p className='p-text'>5.Click on the connect button at the botton for connecting and funding our project</p>
+      <p className='p-text'>4.Keep both secret recovery phrase and password of metamask private</p>
+     <p className='p-text'>7.Click on the connect button at the botton for connecting and funding our project</p>
       <div className='about-wrk'>
       <div >
-       <button className='ab-connect'  onClick={address}>Connect</button>
+       <button className='ab-connect' onClick={address}>Connect</button>
     </div>
       <input
         type="text"

@@ -5,26 +5,25 @@ import "./index.css";
 const Home = () => {
   return (
     <div>
-      <h1 className="header">CRYPTOGRAPHIC FARMING</h1>
-      <p className='p-homes'>Our effort is made up of farmers (who lack the resources to buy land), landowners, and campaigners.
+      <h1 className="header">Cryptographic farming</h1>
+      <p className='p-homes'>Farmers (who lack the means to purchase property), landowners, and activists make up
+our initiative.
 
-Farmers empower activists by casting their votes in DAOs, a blockchain offshoot. We utilise an algorithm that gives activists tokens and authority based on the votes of farmers. Activists do out research, look after the environment, and carefully examine farmers and their trustworthiness.
-
-Landowners then identify and loan farmers in an analytical way with the aid of campaigners. We also assist farmers by providing them with loans and insurance to safeguard them. We are able to make money by analysing crop wealth, farmer labour force, harvested resource use, and farm product utilisation. In this case, we use cryptocurrency as an exchange token that is more reliable and safe..</p>
-
-<h4 className="h4-home">"The Ultimate goal of Farming is growing of crops,but also the cultivation and perfection of human beings"</h4>
-
+By voting in DAOs, farmers give activists authority. We employ an algorithm in which
+farmers' votes are used to grant activists authority and tokens. Activists conduct surveys,
+care after the land, and conduct thorough study on farmers and their dependability.
+Farmers are then loaned and identified by landowners in an analytical manner with the
+help of activists. Additionally, we help the farmers by giving them loans and insurance,
+which protects them. By analysing crop wealth, farmer labour force, harvested resource
+use, and farm product usage, we are able to generate profits. As a more dependable and
+secure exchange token in this situation, we employ XDC.</p>
+<img src="https://i.ytimg.com/vi/0IGIA4wRkyQ/maxresdefault.jpg" className='img-home' />
+<h1 className='h1-home'>"The Ultimate goal of Farming is not the growing of crops,but the cultivation and perfection of human beings"</h1>
       <a href="/signinActivist" class="hero-btn">Sign In As Activist</a>
       <a href="/signinfarmer" class="hero-btn">Sign In As Farmer</a>
-      <a href="/signinowner" class="hero-btn">Sign In  Owner</a>
-      <a href="/login" class="hero-btn">Login</a>
-      
-
-
-      
-      
+      <a href="/signinowner" class="hero-btn">Sign In As Owner</a>
     </div>
   );
 };
-  
+
 export default Home;
