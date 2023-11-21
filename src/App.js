@@ -9,6 +9,7 @@ import Blogs from './Blogs';
 import Signin from './Signin';
 import SignInfarmer from './SignInFarmer';
 import SignInOwner from './SignInOwner';
+import Deposit from './Deposit';
 
 function App(){
 
@@ -24,6 +25,7 @@ function App(){
         <Route path='/signinActivist' element={<Signin />} />
         <Route path='/signinfarmer' element={<SignInfarmer/>} />
         <Route path='/signinowner' element={<SignInOwner />} />
+        <Route path='/deposit' element={<Deposit />} />
       </Routes>
     </Router>
     </div>

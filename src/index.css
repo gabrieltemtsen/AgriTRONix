@@ -4,7 +4,7 @@ body {
   font-family: 'Times New Roman', Times, serif;
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7) ),url(https://images.pexels.com/photos/164504/pexels-photo-164504.jpeg?auto=compress&cs=tinysrgb&w=1200);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7) ),url('./Assets/pexels.png');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -18,7 +18,7 @@ body {
   font-family:'Times New Roman', Times, serif;
   color:rgb(211, 237, 12);
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .h4-home{
@@ -52,6 +52,7 @@ body {
     position: relative;
     border-radius: 10px;
     margin-top: 50px;
+    margin: 5px; /* Optional: adds margin around each button */
     margin-right: 2px;
     margin-left: 150px;
     cursor: pointer;
@@ -78,4 +79,53 @@ body {
 .img-display img {
   max-width: 100%; /* Ensure the image doesn't exceed the container width */
   max-height: 100%; /* Ensure the image doesn't exceed the container height */
+}
+
+.h5-home{
+  font-family:'Times New Roman', Times, serif;
+  color:white;
+  text-align: left;
+  font-size: 40px;
+}
+
+.p-header{
+  font-family:'Times New Roman', Times, serif;
+  color: rgb(222, 232, 224);
+  text-align: center;
+  margin-left: 80px;
+  margin-right: 80px;
+  font-size: 30px;
+}
+
+.content-with-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px; /* Adjust as needed */
+}
+
+.text-content {
+  flex: 1;
+  padding-right: 20px; /* Spacing between text and image */
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional, for styling */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Aligns children (buttons) horizontally center */
+  flex-wrap: wrap; /* If you want buttons to wrap in smaller screens */
+  gap: 10px; /* Adjust the space between buttons */
+  margin-top: 30px; /* Adjust the value as needed */
 }

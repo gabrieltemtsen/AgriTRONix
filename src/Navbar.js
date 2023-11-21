@@ -18,7 +18,7 @@ const Navbar = () => {
   
         <NavMenu>
         <NavLink to="/">
-          <img className='fav-nav' src='./3-removebg-preview.ico' />
+          <img className='fav-nav' src='./mentorconnect1.ico' />
           </NavLink>
         <NavLink to='/'>
             Home 
@@ -30,7 +30,7 @@ const Navbar = () => {
              About project
           </NavLink>
     <NavLink to='/blogs'>
-            About XDC Network
+            About College
           </NavLink>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}

@@ -4,7 +4,7 @@
     font-size: 30px;
 }
 .ab-text{
-    margin-left: 600px;
+    margin-left: 440px;
     font-family: 'Times New Roman', Times, serif;
     text-align:left;
     color: gold;
@@ -20,3 +20,23 @@
     text-align:left;
     color: gold;
 }
+.ab-texts{
+    font-family: 'Times New Roman', Times, serif;
+    text-align:center;
+    color: gold;
+}
+/* CSS for styling the image */
+.mentor-image {
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Ensure the image doesn't exceed its container width */
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+
+  .header{
+    font-family:'Times New Roman', Times, serif;
+    color:rgb(211, 237, 12);
+    text-align: center;
+    font-size: 30px;
+    margin-top: 200px;
+  }
