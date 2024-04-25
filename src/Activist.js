@@ -7,153 +7,118 @@ import NameFarmer from './NameFarmer';
 import Areaname from './Areaname';
 import "./farmer.css"
 
-const Activist = () => {
-  let [deposit, setDeposit] = useState('');
-  let [name, setName] = useState('');
-  let [RollNo, setRollNo] = useState('');
-  let [Department, setDepartment] = useState('');
-  let [Message, setMessage] = useState('');
-  let [Mentor, setMentor] = useState('');
+const Activist=()=>{
+  let [withdraw, setWithdraw] = useState('');
+  let[deposit,setDeposit]=useState('');
+  let[vote,setVote]=useState('');
+  let[name,setName]=useState('');
+  let[areaname,setAreaname]=useState('');
+  let[AreaAffected,setAreaAffected]=useState('')
 
-  const handleDeposit = async (event) => {
-    setDeposit(event.target.value);
+  const handleChange = event => {
+    setWithdraw(event.target.value);
     console.log('value is:', event.target.value);
-    try {
-      // Create a data object with the form values
-      const data = {
-        name,
-        roll_no: RollNo,
-        Department,
-        Message,
-        mentor_name: Mentor,
-        deposit_amount: deposit,
-      };
-
-      // Send a POST request to your backend to save the data
-      const response = await fetch('/routes/depositRoutes', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
-
-      if (response.ok) {
-        // Handle successful deposit confirmation
-        console.log('Deposit recorded successfully');
-        // You can reset the form fields here if needed
-        setDeposit('');
-        setName('');
-        setRollNo('');
-        setDepartment('');
-        setMessage('');
-        setMentor('');
-      } else {
-        // Handle error responses from the server
-        console.error('Deposit request failed.');
-      }
-    } catch (error) {
-      console.error('Error while processing deposit:', error);
-    }
   };
 
+  const handleDeposit=event=>{
+    setDeposit(event.target.value);
+    console.log('value is:', event.target.value);
+  }
 
-  const handleName = event => {
+  const handleVote=event=>{
+    setVote(event.target.value);
+    console.log('value is:', event.target.value);
+  }
+
+  const handleName=event=>{
     setName(event.target.value);
     console.log('value is:', event.target.value);
   }
 
-  const handleRollNo = event => {
-    setRollNo(event.target.value);
+  const handleAreaname=event=>{
+    setAreaname(event.target.value);
+    localStorage.setItem('affected',event.target.value)
+  
     console.log('value is:', event.target.value);
   }
 
-  const handleDepartment = event => {
-    setDepartment(event.target.value);
+  const handleAreaaffected=event=>{
+    setAreaAffected(event.target.value);
+    localStorage.setItem('affected1',event.target.value)
+  
     console.log('value is:', event.target.value);
   }
-
-  const handleMessage = event => {
-    setMessage(event.target.value);
-    console.log('value is:', event.target.value);
-  }
-
-  const handleMentor = event => {
-    setMentor(event.target.value);
-    console.log('value is:', event.target.value);
-  }
-
 
   return (
     <div className="App">
-      <h1>Hello Student</h1>
+      <h1>Activist</h1>
       <div>
-        <p className='f-head'>Name:- {name}</p>
-        <input
-          type="text"
-          id="message"
-          name="message"
-          className='txt-msg'
-          placeholder='Name'
-          onChange={handleName}
-          value={name}></input>
-      </div>
+      <p className='f-head' >Withdraw amount: {withdraw}</p>
+      <button onClick={withdrawFarmer}{...()=>withdraw}>withdraw</button>
+        </div>
+      <input 
+      type="hidden"
+      id="message"
+      name="message"
+      className='txt-msg'
+      // placeholder='Deposit amount'
+      onChange={handleChange}
+      value={withdraw}>
+      </input>
       <div>
-        <p className='f-head'>Roll No:- {RollNo}</p>
-        <input
-          type="text"
-          id="message"
-          name="message"
-          className='txt-msg'
-          placeholder='RollNo'
-          onChange={handleRollNo}
-          value={RollNo}></input>
+        <p className='f-head'>Deposit amount: {deposit}</p>
+      <input 
+      type="text"
+      id="message"
+      name="message"
+      className='txt-msg'
+      placeholder='Deposit amount'
+      onChange={handleDeposit}
+      value={deposit}></input>
+        <button onClick={DepositFarmer}{...()=>deposit}>Deposit</button>
+        </div>
+        <div>
+          <p className='f-head'>Vote: {vote}</p>
+       <input 
+      type="text"
+      id="message"
+      name="message"
+      className='txt-msg'
+      placeholder='Vote'
+      onChange={handleVote}
+      value={vote}></input>
+      <button onClick={VoteFarmer}{...()=>vote}>Vote</button>
+       </div>
+       <div>
+         <p className='f-head'>Claim name: {name}</p>
+       <input 
+      type="text"
+      id="message"
+      name="message"
+      className='txt-msg'
+      placeholder='Name'
+      onChange={handleName}
+      value={name}></input>
+      <button onClick={NameFarmer}{...()=>name}>Name</button>
       </div>
-      <div>
-        <p className='f-head'>Department:- {Department}</p>
-        <input
-          type="text"
-          id="message"
-          name="message"
-          className='txt-msg'
-          placeholder='Department'
-          onChange={handleDepartment}
-          value={Department}></input>
-      </div>
-      <div>
-        <p className='f-head'>Message:- {Message}</p>
-        <input
-          type="text"
-          id="message"
-          name="message"
-          className='txt-msg'
-          placeholder='Message'
-          onChange={handleMessage}
-          value={Message}></input>
-      </div>
-      <div>
-        <p className='f-head'>Mentor Name:- {Mentor}</p>
-        <input
-          type="text"
-          id="message"
-          name="message"
-          className='txt-msg'
-          placeholder='MentorName'
-          onChange={handleMentor}
-          value={Mentor}></input>
-      </div>
-      <div>
-        <p className='f-head'>Deposit amount:- {deposit}</p>
-        <input
-          type="text"
-          id="message"
-          name="message"
-          className='txt-msg'
-          placeholder='Deposit amount'
-          onChange={handleDeposit}
-          value={deposit}></input>
-        <button onClick={DepositFarmer}{...() => deposit}>Deposit</button>
-      </div>
+      <p className='f-head'>Area name:{areaname}</p>
+       <input 
+      type="text"
+      id="message"
+      name="message"
+      className='txt-msg'
+      placeholder='Area name'
+      onChange={handleAreaname}
+      value={areaname}></input>
+      <input 
+      type="text"
+      id="message"
+      name="message"
+      className='txt-msg'
+      placeholder='Affected diameter'
+      onChange={handleAreaaffected}
+      value={AreaAffected}></input>
+      <button onClick={Areaname}>Submit Area name </button>
     </div>
   );
 }

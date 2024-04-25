@@ -79,7 +79,7 @@ function can_withdraw() public{
     }
     balance_=address(this).balance;
 }
-function total_power() public returns (uint256 ){
+function total_power() public view returns (uint256 ){
     uint256 TotalPower ;
     for (uint j=0;j<activists.length;j++){
         
@@ -122,13 +122,14 @@ function declaring_activist(address acti) public{
     persons[acti].vote=acti;
     activists.push(acti);
 }
-function decider(address per) public view returns(string memory){
+function decider(address per) public view returns (string memory){
     if (persons[per].farmer){
         return "farmer";
     }
     if (persons[per].activist){
         return "activist";
     }
+    return "unknown";
 }
 function rname(address per) public view returns (string memory){
     return persons[per].name;

@@ -49,9 +49,18 @@ const Owner=()=>{
 
   return (
     <div className="App">
-      <h1>Hello Admin</h1>
+      <h1>Owner</h1>
+      <input 
+      type="hidden"
+      id="message"
+      name="message"
+      onChange={handleChange}
+      value={canwithdraw}>
+      </input>
+      <p className='own-head'>Can withdraw amount: {canwithdraw}</p>
+      <button onClick={()=>canwithdraw}>withdraw</button>
       <div>
-      <p className='own-head'>Metamask Address: {address}</p>
+      <p className='own-head'>Address: {address}</p>
       <input 
       type="text"
       id="message"
@@ -62,31 +71,46 @@ const Owner=()=>{
       value={address}></input>
       </div>
       <div>
-        <p className='own-head'>Funded a particular amount(Yes/No) {areasize}</p>
+        <p className='own-head'>Area size: {areasize}</p>
        <input 
       type="text"
       id="message"
       name="message"
-      placeholder='Fund Amount'
+      placeholder='Area size'
       className='own-msg'
       onChange={handleareasize}
       value={areasize}></input>
       {/* <button onClick={()=>areasize}>areasize</button> */}
       </div>
       <div>
-        <p className='own-head'>Approve Student/Mentor {name}</p>
+        <p className='own-head'>Name: {name}</p>
        <input 
       type="text"
       id="message"
       name="message"
       className='own-msg'
-      placeholder='Student/Mentor Name'
+      placeholder='Farmer/Activist Name'
       onChange={handleName}
       value={name}></input>
           {/* <button onClick={()=>name}>name</button> */}
       </div>
-      <button className='own-msg' onClick={()=>farmer}>Declared as Student</button>
-      <button className='own-msg' onClick={()=>farmer}>Declared as Mentor</button>
+      <div>
+        <p className='own-head'>Area name:{areaname}</p>
+       <input 
+      type="text"
+      id="message"
+      name="message"
+      placeholder='Area name'
+      className='own-msg'
+      onChange={handleAreaname}
+      value={areaname}></input>
+      {/* <button onClick={()=>areaname}>area name </button> */}
+      {/* <input 
+      onChange={handleFarmer}
+      value={farmer}></input> */}
+      </div>
+      <button onClick={()=>farmer}>Declared as farmer</button>
+      <button onClick={()=>farmer}>Declared as Activist</button>
     </div>
   );
 }

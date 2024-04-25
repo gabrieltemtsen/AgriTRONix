@@ -4,8 +4,6 @@ import {
   NavLink,
   Bars,
   NavMenu,
-  NavBtn,
-  NavBtnLink,
 } from './NavbarElements';
 import './favicon.css';
 
@@ -18,7 +16,7 @@ const Navbar = () => {
   
         <NavMenu>
         <NavLink to="/">
-          <img className='fav-nav' src='./mentorconnect1.ico' />
+          <img className='fav-nav' src='./rtfight.png' alt='icon'/>
           </NavLink>
         <NavLink to='/'>
             Home 
@@ -27,10 +25,10 @@ const Navbar = () => {
             Connect Your Wallet
           </NavLink>
           <NavLink to='/annual'>
-             About project
+             About RTFight
           </NavLink>
     <NavLink to='/blogs'>
-            About College
+            About RTFChain
           </NavLink>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}

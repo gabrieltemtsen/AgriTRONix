@@ -16,6 +16,11 @@
   }
   .ab-text{
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin-right: 400px; 
   }
   .ab-message{
     font-family: 'Times New Roman', Times, serif;
@@ -112,7 +117,7 @@
   font-size: 30px;
   }
   .ad-text{
-    margin-left: 20px;
+    margin-left: 50px;
     color:gold;
   font-size: 30px;
   }

@@ -14,7 +14,7 @@ async function Screen() {
         )
         
       } catch (error) {
-        console.log(error)
+        console.log("Error during deposit:", error)
       }}
   return (
     <div>Screen</div>
