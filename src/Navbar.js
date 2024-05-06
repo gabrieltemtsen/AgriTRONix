@@ -16,7 +16,7 @@ const Navbar = () => {
   
         <NavMenu>
         <NavLink to="/">
-          <img className='fav-nav' src='./rtfight.png' alt='icon'/>
+          <img className='fav-nav' src='./tronx.png' alt='icon'/>
           </NavLink>
         <NavLink to='/'>
             Home 
@@ -25,10 +25,10 @@ const Navbar = () => {
             Connect Your Wallet
           </NavLink>
           <NavLink to='/annual'>
-             About RTFight
+             About AgriTRONix
           </NavLink>
     <NavLink to='/blogs'>
-            About RTFChain
+            TRON network
           </NavLink>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}

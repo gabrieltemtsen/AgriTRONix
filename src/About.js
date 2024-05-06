@@ -37,7 +37,7 @@ const About = () => {
       <div>
        <button className='ab-fund' onClick={Screen}>fund</button>
        </div>
-       <strong className='header'>"Farming is not just planting fields, but sowing the seeds of innovation." - RTFAgrichain</strong>
+       <strong className='header'>"Farming is not just planting fields, but sowing the seeds of innovation." - AgriTRONix</strong>
        </div>
     </div>
   );

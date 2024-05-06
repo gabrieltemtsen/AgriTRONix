@@ -2,14 +2,14 @@ import React from 'react';
 import "./index.css";
 import farmers from './Assets/farmers.png';
 import farmers1 from './Assets/farmers1.jpg';
-import RTFfarming from './Assets/RTFfarming.jpg';
+import tron from './Assets/tron.png'
 
 
 const Home = () => {
   return (
     <div>
       <body>
-        <h1 className='h4-home'>Welcome to RTF AgriChain</h1>
+        <h1 className='h4-home'>Welcome to AgriTRONix</h1>
 
         <p className='p-header'>Empowering Farmers with Blockchain-Driven Insurance</p>
 
@@ -36,13 +36,13 @@ const Home = () => {
             <img src={farmers1} alt="Description of Second Image" />
           </div>
           <div className="text-content">
-            <p className='p-homes'><strong className='header'>1. Seamless Connectivity:</strong> Easily connect with tutors and mentors from around the world in real-time.</p>
+            <p className='p-homes'><strong className='header'>1. Seamless Connectivity:</strong> Easily connect with farmers and activists from around the world in real-time.</p>
 
             <p className='p-homes'><strong className='header'>2. Secure Payments:</strong> Pay for your sessions securely with cryptocurrency, ensuring the safety of your financial information.</p>
 
-            <p className='p-homes'><strong className='header'>3. Track Progress:</strong> Monitor your progress and learning milestones through our user-friendly dashboard.</p>
+            <p className='p-homes'><strong className='header'>3. Track Progress:</strong> Monitor your progress and milestones through our user-friendly dashboard.</p>
 
-            <p className='p-homes'><strong className='header'>4. Community Engagement:</strong> Join a vibrant community of learners and educators, fostering a culture of knowledge sharing.</p>
+            <p className='p-homes'><strong className='header'>4. Community Engagement:</strong> Join a vibrant community of future farmers and activists and owners, fostering a culture of knowledge sharing.</p>
 
           </div>
         </div>
@@ -51,7 +51,7 @@ const Home = () => {
         <div className="content-with-image">
           <div className="text-content">
 
-            <p className='p-homes'><strong className='header'>1. RTFchain Empowerment:</strong> Through our Roots to Future (RTF) blockchain, we are READY TO FIGHT (RTF) for the survival and prosperity of farmers by leveraging secure and transparent technology.</p>
+            <p className='p-homes'><strong className='header'>1. AgriTRONix Empowerment:</strong> Through our AgriTRON (TRON) blockchain, we are ready to throne with TRON network for the survival and prosperity of farmers by leveraging secure and transparent technology.</p>
 
             <p className='p-homes'><strong className='header'>2. Decentralized Support:</strong> Our blockchain technology decentralizes the support system, directly connecting farmers with the resources they need without intermediary delays or corruption.</p>
 
@@ -60,7 +60,7 @@ const Home = () => {
             <p className='p-homes'><strong className='header'>4. Transparent Advocacy:</strong> Every transaction and support activity is recorded on the blockchain, ensuring that every contribution towards farmer advocacy is visible and accountable</p>
           </div>
           <div className="image-content">
-            <img src={RTFfarming} alt="Description of First Image" />
+            <img src={tron  } alt="Description of First Image" />
           </div>
         </div>
 

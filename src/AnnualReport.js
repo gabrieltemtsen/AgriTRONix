@@ -4,9 +4,9 @@ import "./AnnualReport.css"
 const AnnualReport = () => {
   return (
     <div>
-      <h1 className='ab-texts'>About RTFAgrichain</h1>
+      <h1 className='ab-texts'>About AgriTRONix</h1>
       <div>
-      <p className='p-text'>RTFAgrichain is a pioneering agricultural support platform leveraging blockchain technology to empower farmers. Our platform facilitates a direct, transparent, and secure connection between farmers, activists, and agricultural stakeholders. By decentralizing the way agricultural data and transactions are handled, we ensure that every step from seed planting to crop insurance is traceable and secure, fostering a community of trust and support.</p>
+      <p className='p-text'>AgriTRONix is a pioneering agricultural support platform leveraging blockchain technology to empower farmers. Our platform facilitates a direct, transparent, and secure connection between farmers, activists, and agricultural stakeholders. By decentralizing the way agricultural data and transactions are handled, we ensure that every step from seed planting to crop insurance is traceable and secure, fostering a community of trust and support.</p>
       </div>
       <h1 className='ab-texts'>Advantages of Blockchain for Agriculture</h1>
       <p className='p-text'><h5 className='ab-topic'>Enhanced Security:</h5> Blockchain technology offers a highly secure environment for managing agricultural data and transactions, significantly reducing the risk of fraud and tampering with sensitive information such as land records and insurance claims.<br></br></p>
@@ -32,7 +32,7 @@ const AnnualReport = () => {
       <img src={require('./Assets/agriculture.jpg')} alt="agriculture" className="mentor-image" /><br></br>
       <p className='p-text1'>Contact Us:
          Phone No. +91 9360593132<br></br>
-       Email Id: farhun@cstechnologies.biz
+       Email Id: farhunhazard@gmail.com
        </p>
     </div>
   );
