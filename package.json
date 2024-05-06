@@ -20,7 +20,7 @@
     "react-scripts": "5.0.1",
     "styled-components": "^6.0.8",
     "web-vitals": "^2.1.4",
-    "@rollup/plugin-terser": "^latest", 
+    "@rollup/plugin-terser": "latest", 
     "svgo": "^2.x" 
   },
   "scripts": {
@@ -55,12 +55,12 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-transform-private-methods": "^latest", 
-    "@babel/plugin-transform-numeric-separator": "^latest", 
-    "@babel/plugin-transform-nullish-coalescing-operator": "^latest", 
-    "@babel/plugin-transform-class-properties": "^latest",
-    "@babel/plugin-transform-private-property-in-object": "^latest",
-    "@babel/plugin-transform-optional-chaining": "^latest",
-    "@babel/plugin-transform-object-rest-spread": "^latest"
+    "@babel/plugin-transform-private-methods": "latest", 
+    "@babel/plugin-transform-numeric-separator": "latest", 
+    "@babel/plugin-transform-nullish-coalescing-operator": "latest", 
+    "@babel/plugin-transform-class-properties": "latest",
+    "@babel/plugin-transform-private-property-in-object": "latest",
+    "@babel/plugin-transform-optional-chaining": "latest",
+    "@babel/plugin-transform-object-rest-spread": "latest"
   }
 }
