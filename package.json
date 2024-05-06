@@ -26,9 +26,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dummy": "echo 'trigger rebuild'"
-    "preinstall": "npm run clean-install",
-    "clean-install": "rm -rf node_modules && npm install",
+    "dummy": "echo 'trigger rebuild'",
+    "preinstall" : "npm run clean-install",
+    "clean-install": "rm -rf node_modules && npm install"
   },
   "engines": {
     "node": "20.x",
