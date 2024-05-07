@@ -16,7 +16,8 @@ AgriTRONix integrates smart contracts for crop insurance and utilizes AI-driven 
 To get started with AgriTRONix, clone the repository and follow the setup instructions below:
 
 
-git clone https://github.com/farhunhazard/AgriTRONix.git
+git clone https://github.com/farhunhazard/AgriTRONix.git 
+
 cd AgriTRONix
 
 # Follow installation instructions
