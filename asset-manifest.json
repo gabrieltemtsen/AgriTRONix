@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/agritronix/static/css/main.ea0d6ae9.css",
+    "main.js": "/agritronix/static/js/main.b95c684e.js",
+    "static/media/pexels.png": "/agritronix/static/media/pexels.efe669de58410c14fe7b.png",
+    "static/media/farmers.png": "/agritronix/static/media/farmers.a2791783561966c4561b.png",
+    "static/media/farmers1.jpg": "/agritronix/static/media/farmers1.0bb1e08518555381c605.jpg",
+    "static/media/tron.png": "/agritronix/static/media/tron.8cb2f3bcbbe88b9d7581.png",
+    "static/media/agriculture.jpg": "/agritronix/static/media/agriculture.11565f7e0b9d298859e4.jpg",
+    "index.html": "/agritronix/index.html",
+    "main.ea0d6ae9.css.map": "/agritronix/static/css/main.ea0d6ae9.css.map",
+    "main.b95c684e.js.map": "/agritronix/static/js/main.b95c684e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea0d6ae9.css",
+    "static/js/main.b95c684e.js"
+  ]
+}
